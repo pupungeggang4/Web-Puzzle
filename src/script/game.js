@@ -32,7 +32,7 @@ class Game {
         let targetRect = this.canvas.getBoundingClientRect()
         let pos = {
             x: (event.clientX - targetRect.left) / targetRect.width * this.canvas.width,
-            y: (event.clietnY - targetRect.top) / targetRect.height * this.canvas.height
+            y: (event.clientY - targetRect.top) / targetRect.height * this.canvas.height
         }
         let button = event.button
 
