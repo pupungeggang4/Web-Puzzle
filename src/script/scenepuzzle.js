@@ -8,7 +8,11 @@ class ScenePuzzle {
     }
 
     render(game) {
-
+        let ctx = game.ctx
+        let canvas = game.canvas
+        Render.init(ctx)
+        Render.clearCanvas(canvas, ctx)
+        Render.fillCanvas(canvas, ctx)
     }
 
     mouseUp(game, pos, button) {
