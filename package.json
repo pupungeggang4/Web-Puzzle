@@ -1,0 +1,20 @@
+{
+  "name": "wp",
+  "version": "1.0.0",
+  "description": "Puzzle Game",
+  "homepage": "https://github.com/pupungeggang4/Web-Puzzle#readme",
+  "bugs": {
+    "url": "https://github.com/pupungeggang4/Web-Puzzle/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pupungeggang4/Web-Puzzle.git"
+  },
+  "license": "BSD-2-Clause",
+  "author": "pupungeggang4",
+  "type": "commonjs",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

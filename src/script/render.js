@@ -8,6 +8,18 @@ class Render {
         ctx.fillStyle = 'black'
     }
 
+    static renderMenu(game) {
+        let ctx = game.ctx
+        ctx.fillStyle = 'white'
+        Render.fillRectUI(ctx, UI.menu.rect)
+        Render.strokeRectUI(ctx, UI.menu.rect)
+        ctx.fillStyle = 'black'
+
+        Render.strokeRectUI(ctx, UI.menu.buttonResume)
+        Render.strokeRectUI(ctx, UI.menu.buttonSave)
+        Render.strokeRectUI(ctx, UI.menu.buttonExit)
+    }
+
     static clearCanvas(canvas, ctx) {
         ctx.clearRect(0, 0, canvas.width, canvas.height)
     }
