@@ -8,6 +8,8 @@ class Game {
         window.addEventListener('keydown', (event) => this.keyDown(event), false)
         window.addEventListener('keyup', (event) => this.keyUp(event), false)
 
+        this.level = new Level()
+
         this.frameCurrent = 0
         this.framePrevious = 0
         this.delta = 0

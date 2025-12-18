@@ -14,6 +14,8 @@ class ScenePuzzle {
         Render.clearCanvas(canvas, ctx)
         Render.fillCanvas(canvas, ctx)
 
+        game.level.render(game)
+
         if (game.menu === true) {
             Render.renderMenu(game)
         }

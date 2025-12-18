@@ -16,7 +16,9 @@ class Render {
         ctx.fillStyle = 'black'
 
         Render.strokeRectUI(ctx, UI.menu.buttonResume)
-        Render.strokeRectUI(ctx, UI.menu.buttonSave)
+        if (game.level.name != 'main') {
+            Render.strokeRectUI(ctx, UI.menu.buttonBack)
+        }
         Render.strokeRectUI(ctx, UI.menu.buttonExit)
     }
 
