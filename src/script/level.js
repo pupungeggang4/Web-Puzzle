@@ -6,6 +6,11 @@ class Level {
     }
 
     render(game) {
+        let ctx = game.ctx
+        Render.strokeRectUI(ctx, UI.puzzle.area)
+        ctx.save()
+        ctx.translate(UI.puzzle.area[0], UI.puzzle.area[1])
         this.player.render(game)
+        ctx.restore()
     }
 }

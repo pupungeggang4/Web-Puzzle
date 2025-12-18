@@ -19,7 +19,17 @@ class Render {
         if (game.level.name != 'main') {
             Render.strokeRectUI(ctx, UI.menu.buttonBack)
         }
+
         Render.strokeRectUI(ctx, UI.menu.buttonExit)
+    }
+
+    static renderLeftUI(game) {
+        let ctx = game.ctx
+        Render.strokeRectUI(ctx, UI.puzzle.buttonSleep)
+        Render.strokeRectUI(ctx, UI.puzzle.buttonLeft)
+        Render.strokeRectUI(ctx, UI.puzzle.buttonRight)
+        Render.strokeRectUI(ctx, UI.puzzle.buttonUp)
+        Render.strokeRectUI(ctx, UI.puzzle.buttonDown)
     }
 
     static clearCanvas(canvas, ctx) {
