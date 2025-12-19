@@ -7,12 +7,12 @@ class UI {
 
     static puzzle = {
         buttonMenu: [1180, 20, 80, 80],
-        buttonSleep: [20, 220, 160, 80],
-        buttonLeft: [20, 420, 80, 160],
-        buttonRight: [100, 420, 80, 160],
-        buttonUp: [20, 320, 160, 80],
-        buttonDown: [20, 600, 160, 80],
-        area: [256, 40, 768, 640],
+        buttonSleep: [20, 220, 240, 80],
+        buttonLeft: [20, 420, 120, 160],
+        buttonRight: [140, 420, 120, 160],
+        buttonUp: [20, 320, 240, 80],
+        buttonDown: [20, 600, 240, 80],
+        area: [280, 24, 720, 672],
     }
 
     static achievement = {

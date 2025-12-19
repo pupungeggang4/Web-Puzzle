@@ -8,6 +8,9 @@ class Game {
         window.addEventListener('keydown', (event) => this.keyDown(event), false)
         window.addEventListener('keyup', (event) => this.keyUp(event), false)
 
+        this.keyPressed = {'left': false, 'right': false, 'up': false, 'down': false}
+        this.keyMapping = {'left': 'a', 'right': 'd', 'up': 'w', 'down': 's'}
+
         this.level = new Level()
 
         this.frameCurrent = 0
@@ -43,11 +46,21 @@ class Game {
 
     keyDown(event) {
         let key = event.key
+        for (const k in this.keyPressed) {
+            if (key === this.keyMapping[k]) {
+                this.keyPressed[k] = true
+            }
+        }
         this.scene.keyDown(this, key)
     }
 
     keyUp(event) {
         let key = event.key
+        for (const k in this.keyPressed) {
+            if (key === this.keyMapping[k]) {
+                this.keyPressed[k] = false
+            }
+        }
         this.scene.keyUp(this, key)
     }
 }

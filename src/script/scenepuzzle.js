@@ -4,6 +4,11 @@ class ScenePuzzle {
     }
 
     loop(game) {
+        if (game.menu === false) {
+            if (game.state === '') {
+                game.level.player.move(game)
+            }
+        }
         this.render(game)
     }
 
@@ -35,8 +40,6 @@ class ScenePuzzle {
                     game.menu = false
                 } else if (Util.pointInsideRectUI(pos, UI.menu.buttonResume)) {
                     game.menu = false
-                } else if (Util.pointInsideRectUI(pos, UI.menu.buttonSave)) {
-
                 } else if (Util.pointInsideRectUI(pos, UI.menu.buttonExit)) {
                     game.scene = new SceneTitle(game)
                 }
